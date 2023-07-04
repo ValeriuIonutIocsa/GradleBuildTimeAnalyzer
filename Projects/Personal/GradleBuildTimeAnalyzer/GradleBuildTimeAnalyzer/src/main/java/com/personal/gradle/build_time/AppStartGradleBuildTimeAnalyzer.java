@@ -28,7 +28,7 @@ final class AppStartGradleBuildTimeAnalyzer {
 		final Instant start = Instant.now();
 		Logger.setDebugMode(true);
 
-		Logger.printProgress("--> starting GradleBuildTimeAnalyzer");
+		Logger.printProgress("starting GradleBuildTimeAnalyzer");
 
 		final Map<String, List<Long>> nameToTimeListMap = new HashMap<>();
 		readInputFile(nameToTimeListMap);
