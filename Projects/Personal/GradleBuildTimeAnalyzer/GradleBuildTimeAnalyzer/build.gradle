@@ -1,0 +1,14 @@
+ext {
+    mainClass = 'com.personal.gradle.build_time.AppStart' + project.name
+    projectVersion = '0.0.1'
+
+    subProjectNames = [
+            ':writer-utils-xlsx'
+    ]
+    compileClassPaths = []
+    compileJarFilePaths = []
+    testCompileClassPaths = []
+    testCompileJarFilePaths = []
+}
+
+apply from: gradle.ext.rootDirPath + '/common_build.gradle'
